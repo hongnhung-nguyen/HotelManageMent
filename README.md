@@ -1,6 +1,6 @@
 # HotelManageMent
 
-Trịnh Hữu Hiệp 20120079
-Nguyễn Thị Hồng Nhung 20120093
-Trần Thái San 20120177
-Nguyễn Nhật Trường 20120229
+<p>Trịnh Hữu Hiệp 20120079 <br>
+<p>Nguyễn Thị Hồng Nhung 20120093<br>
+<p>Trần Thái San 20120177<br>
+<p>Nguyễn Nhật Trường 20120229<br>
