@@ -1,0 +1,10 @@
+C:\Users\Admin\Desktop\Hotel Management\HotelManageMent\src\src\bin\Debug\src.exe.config
+C:\Users\Admin\Desktop\Hotel Management\HotelManageMent\src\src\bin\Debug\src.exe
+C:\Users\Admin\Desktop\Hotel Management\HotelManageMent\src\src\bin\Debug\src.pdb
+C:\Users\Admin\Desktop\Hotel Management\HotelManageMent\src\src\obj\Debug\src.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\Hotel Management\HotelManageMent\src\src\obj\Debug\src.formMain.resources
+C:\Users\Admin\Desktop\Hotel Management\HotelManageMent\src\src\obj\Debug\src.Properties.Resources.resources
+C:\Users\Admin\Desktop\Hotel Management\HotelManageMent\src\src\obj\Debug\src.csproj.GenerateResource.cache
+C:\Users\Admin\Desktop\Hotel Management\HotelManageMent\src\src\obj\Debug\src.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\Hotel Management\HotelManageMent\src\src\obj\Debug\src.exe
+C:\Users\Admin\Desktop\Hotel Management\HotelManageMent\src\src\obj\Debug\src.pdb
