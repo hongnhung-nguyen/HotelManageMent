@@ -33,7 +33,6 @@ namespace src
             this.sidebar = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.menuButton = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -45,14 +44,18 @@ namespace src
             this.panel6 = new System.Windows.Forms.Panel();
             this.button5 = new System.Windows.Forms.Button();
             this.sidebarTimer = new System.Windows.Forms.Timer(this.components);
+            this.menuButton = new System.Windows.Forms.PictureBox();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.button6 = new System.Windows.Forms.Button();
             this.sidebar.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.menuButton)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.menuButton)).BeginInit();
+            this.panel7.SuspendLayout();
             this.SuspendLayout();
             // 
             // sidebar
@@ -64,6 +67,7 @@ namespace src
             this.sidebar.Controls.Add(this.panel4);
             this.sidebar.Controls.Add(this.panel5);
             this.sidebar.Controls.Add(this.panel6);
+            this.sidebar.Controls.Add(this.panel7);
             this.sidebar.Location = new System.Drawing.Point(0, 0);
             this.sidebar.MaximumSize = new System.Drawing.Size(300, 680);
             this.sidebar.MinimumSize = new System.Drawing.Size(98, 500);
@@ -90,18 +94,6 @@ namespace src
             this.label1.Size = new System.Drawing.Size(64, 23);
             this.label1.TabIndex = 1;
             this.label1.Text = "Menu";
-            // 
-            // menuButton
-            // 
-            this.menuButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.menuButton.Image = global::src.Properties.Resources.iconbar;
-            this.menuButton.Location = new System.Drawing.Point(9, 39);
-            this.menuButton.Name = "menuButton";
-            this.menuButton.Size = new System.Drawing.Size(69, 46);
-            this.menuButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.menuButton.TabIndex = 0;
-            this.menuButton.TabStop = false;
-            this.menuButton.Click += new System.EventHandler(this.menuButton_Click);
             // 
             // panel2
             // 
@@ -199,13 +191,45 @@ namespace src
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(328, 98);
             this.button5.TabIndex = 1;
-            this.button5.Text = "Log out";
+            this.button5.Text = "Check out";
             this.button5.UseVisualStyleBackColor = true;
             // 
             // sidebarTimer
             // 
             this.sidebarTimer.Interval = 3;
             this.sidebarTimer.Tick += new System.EventHandler(this.sidebarTimer_Tick);
+            // 
+            // menuButton
+            // 
+            this.menuButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.menuButton.Image = global::src.Properties.Resources.iconbar;
+            this.menuButton.Location = new System.Drawing.Point(9, 39);
+            this.menuButton.Name = "menuButton";
+            this.menuButton.Size = new System.Drawing.Size(69, 46);
+            this.menuButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.menuButton.TabIndex = 0;
+            this.menuButton.TabStop = false;
+            this.menuButton.Click += new System.EventHandler(this.menuButton_Click);
+            // 
+            // panel7
+            // 
+            this.panel7.Controls.Add(this.button6);
+            this.panel7.Location = new System.Drawing.Point(3, 592);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(311, 70);
+            this.panel7.TabIndex = 6;
+            // 
+            // button6
+            // 
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.ForeColor = System.Drawing.Color.White;
+            this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button6.Location = new System.Drawing.Point(-17, -12);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(328, 98);
+            this.button6.TabIndex = 1;
+            this.button6.Text = "Log out";
+            this.button6.UseVisualStyleBackColor = true;
             // 
             // formMain
             // 
@@ -222,12 +246,13 @@ namespace src
             this.sidebar.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.menuButton)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.menuButton)).EndInit();
+            this.panel7.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -249,6 +274,8 @@ namespace src
         private System.Windows.Forms.PictureBox menuButton;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Timer sidebarTimer;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Button button6;
     }
 }
 
