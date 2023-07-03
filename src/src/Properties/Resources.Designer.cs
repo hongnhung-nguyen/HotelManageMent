@@ -63,9 +63,29 @@ namespace src.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _219983 {
+            get {
+                object obj = ResourceManager.GetObject("219983", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap iconbar {
             get {
                 object obj = ResourceManager.GetObject("iconbar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap receptionist {
+            get {
+                object obj = ResourceManager.GetObject("receptionist", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
