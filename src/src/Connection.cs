@@ -11,8 +11,8 @@ namespace src
     class Connection
     {
 
-        public static string username { set; get; }
-        public static string password { set; get; }
+        public static string username = "NV041";
+        public static string password = "NV041";
 
         const string host = "localhost";
         const int port = 1521;
@@ -20,8 +20,8 @@ namespace src
 
         Connection()
         {
-            username = "";
-            password = "";
+            username = "NV041";
+            password = "NV041";
         }
 
         public static OracleConnection GetDBConnection()

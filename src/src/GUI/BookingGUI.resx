@@ -117,4 +117,10 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="label4.Text" xml:space="preserve">
+    <value> 1. Nhân Viên cần nhập ít nhất họ tên và cccd của khách hàng 
+ 2. Click Kiểm tra thông tin để xem thông tin khách hàng đã từng tồn tại chưa
+ 3. Insert khách hàng nếu chưa tồn tại thông tin khách hàng trong hệ thống 
+ 4. Click them dịch vụ nếu khách hàng có yêu cầu và nhấn nhận phòng trước khi hoàn tất  </value>
+  </data>
 </root>
