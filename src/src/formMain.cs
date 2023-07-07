@@ -34,7 +34,21 @@ namespace src
         {
 
         }
+        private Form activeform = null;
 
+        private void openChildForm(Form childForm)
+        {
+            if (activeform != null)
+                activeform.Close();
+            activeform = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            pnChildForm.Controls.Add(childForm);
+            pnChildForm.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
+        }
         private void sidebarTimer_Tick(object sender, EventArgs e)
         {
             if (sidebarExpand )
@@ -62,6 +76,15 @@ namespace src
             sidebarTimer.Start();
         }
 
-     
+        private void button6_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            this.father.Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            openChildForm(new GUI.MainBookingGUI());
+        }
     }
 }
