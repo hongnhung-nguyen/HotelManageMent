@@ -5,9 +5,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+//using Oracle.DataAccess.Client;
 using Oracle.ManagedDataAccess.Client;
 
-namespace dataProvider
+namespace src
 {
     class Dataprovider
     {
@@ -31,7 +32,7 @@ namespace dataProvider
         public DataTable ExecuteQuery(string query, object[] parameter = null) // khi viet query can cach ra 
         {
             DataTable data = new DataTable();
-            using (OracleConnection connection = src.Connection.GetDBConnection())
+            using (OracleConnection connection = Connection.GetDBConnection())
             {
                 connection.Open();
                 OracleCommand command = new OracleCommand(query, connection);
@@ -60,7 +61,7 @@ namespace dataProvider
         public int ExecuteNonQuery(string query, object[] parameter = null) // trả ra sos dòng bị ảnh hưởng (inssert / update/ delete)
         {
             int data = 0;// số dòng thành công 
-            using (OracleConnection connection = src.Connection.GetDBConnection())
+            using (OracleConnection connection = Connection.GetDBConnection())
             {
                 connection.Open();
                 OracleCommand command = new OracleCommand(query, connection);
@@ -88,7 +89,7 @@ namespace dataProvider
         public object ExecuteScalar(string query, object[] parameter = null) // trả ra số lượng (khi truy cấn count(*) ... , trả ra số lượng ở ô đầu tiên trong dataset)
         {
             object data = 0;// số dòng thành công 
-            using (OracleConnection connection = src.Connection.GetDBConnection())
+            using (OracleConnection connection = Connection.GetDBConnection())
             {
                 connection.Open();
                 OracleCommand command = new OracleCommand(query, connection);

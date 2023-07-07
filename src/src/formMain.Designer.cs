@@ -47,6 +47,7 @@ namespace src
             this.panel7 = new System.Windows.Forms.Panel();
             this.button6 = new System.Windows.Forms.Button();
             this.sidebarTimer = new System.Windows.Forms.Timer(this.components);
+            this.pnChildForm = new System.Windows.Forms.Panel();
             this.sidebar.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.menuButton)).BeginInit();
@@ -68,11 +69,12 @@ namespace src
             this.sidebar.Controls.Add(this.panel5);
             this.sidebar.Controls.Add(this.panel6);
             this.sidebar.Controls.Add(this.panel7);
+            this.sidebar.Dock = System.Windows.Forms.DockStyle.Left;
             this.sidebar.Location = new System.Drawing.Point(0, 0);
-            this.sidebar.MaximumSize = new System.Drawing.Size(300, 700);
-            this.sidebar.MinimumSize = new System.Drawing.Size(98, 700);
+            this.sidebar.MaximumSize = new System.Drawing.Size(300, 750);
+            this.sidebar.MinimumSize = new System.Drawing.Size(98, 750);
             this.sidebar.Name = "sidebar";
-            this.sidebar.Size = new System.Drawing.Size(300, 700);
+            this.sidebar.Size = new System.Drawing.Size(300, 750);
             this.sidebar.TabIndex = 0;
             // 
             // panel1
@@ -91,7 +93,7 @@ namespace src
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(112, 53);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(64, 23);
+            this.label1.Size = new System.Drawing.Size(58, 21);
             this.label1.TabIndex = 1;
             this.label1.Text = "Menu";
             // 
@@ -145,6 +147,7 @@ namespace src
             this.button2.TabIndex = 1;
             this.button2.Text = "Customer";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // panel4
             // 
@@ -165,6 +168,7 @@ namespace src
             this.button3.TabIndex = 1;
             this.button3.Text = "Room";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // panel5
             // 
@@ -185,6 +189,7 @@ namespace src
             this.button4.TabIndex = 1;
             this.button4.Text = "Booking";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // panel6
             // 
@@ -225,18 +230,28 @@ namespace src
             this.button6.TabIndex = 1;
             this.button6.Text = "Log out";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // sidebarTimer
             // 
             this.sidebarTimer.Interval = 3;
             this.sidebarTimer.Tick += new System.EventHandler(this.sidebarTimer_Tick);
             // 
+            // pnChildForm
+            // 
+            this.pnChildForm.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnChildForm.Location = new System.Drawing.Point(300, 0);
+            this.pnChildForm.Name = "pnChildForm";
+            this.pnChildForm.Size = new System.Drawing.Size(928, 744);
+            this.pnChildForm.TabIndex = 1;
+            // 
             // formMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 23F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(141)))), ((int)(((byte)(85)))));
-            this.ClientSize = new System.Drawing.Size(1028, 694);
+            this.ClientSize = new System.Drawing.Size(1228, 744);
+            this.Controls.Add(this.pnChildForm);
             this.Controls.Add(this.sidebar);
             this.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -275,6 +290,7 @@ namespace src
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.FlowLayoutPanel sidebar;
+        private System.Windows.Forms.Panel pnChildForm;
     }
 }
 

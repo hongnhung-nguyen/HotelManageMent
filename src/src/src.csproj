@@ -38,15 +38,15 @@
     <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.6.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.SqlServer.IntegrationServices.ODataConnectionManager, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Oracle.DataAccess, Version=2.122.19.1, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=AMD64" />
     <Reference Include="Oracle.ManagedDataAccess, Version=4.122.21.1, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL">
       <HintPath>..\packages\Oracle.ManagedDataAccess.21.10.0\lib\net462\Oracle.ManagedDataAccess.dll</HintPath>
     </Reference>
+    <Reference Include="Oracle.Web, Version=2.122.19.1, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=AMD64" />
     <Reference Include="System" />
     <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
     </Reference>
-    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.OracleClient" />
     <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
@@ -82,98 +82,49 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BUS\CustomerBUS.cs" />
-    <Compile Include="BUS\EmployeeBUS.cs" />
-    <Compile Include="BUS\HandleBUS.cs" />
-    <Compile Include="BUS\roomBUS.cs" />
-    <Compile Include="BUS\userBUS.cs" />
-    <Compile Include="Dataprovider.cs" />
-    <Compile Include="DB\CustomerDB.cs" />
-    <Compile Include="DB\EmployeeDB.cs" />
-    <Compile Include="DB\HandleDB.cs" />
+    <Compile Include="BUS\KH_BUS.cs" />
+    <Compile Include="BUS\Room_BUS.cs" />
     <Compile Include="Connection.cs" />
+    <Compile Include="Dataprovider.cs" />
+    <Compile Include="DB\KH_DB.cs" />
+    <Compile Include="DB\Room_DB.cs" />
     <Compile Include="formMain.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="formMain.Designer.cs">
       <DependentUpon>formMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\BookingGUI.cs">
+    <Compile Include="GUI\DSKH_GUI.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\BookingGUI.Designer.cs">
-      <DependentUpon>BookingGUI.cs</DependentUpon>
+    <Compile Include="GUI\DSKH_GUI.Designer.cs">
+      <DependentUpon>DSKH_GUI.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\deleteEmployee.cs">
+    <Compile Include="GUI\DSP_GUI.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\deleteEmployee.Designer.cs">
-      <DependentUpon>deleteEmployee.cs</DependentUpon>
+    <Compile Include="GUI\DSP_GUI.Designer.cs">
+      <DependentUpon>DSP_GUI.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\insertEmployee.cs">
+    <Compile Include="GUI\TTPhong_GUI.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\insertEmployee.Designer.cs">
-      <DependentUpon>insertEmployee.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\mainAdmin.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\mainAdmin.Designer.cs">
-      <DependentUpon>mainAdmin.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\MainBookingGUI.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\MainBookingGUI.Designer.cs">
-      <DependentUpon>MainBookingGUI.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\RoomInforGUI.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\RoomInforGUI.Designer.cs">
-      <DependentUpon>RoomInforGUI.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\Login.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\Login.Designer.cs">
-      <DependentUpon>Login.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\updateEmployee.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\updateEmployee.Designer.cs">
-      <DependentUpon>updateEmployee.cs</DependentUpon>
+    <Compile Include="GUI\TTPhong_GUI.Designer.cs">
+      <DependentUpon>TTPhong_GUI.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="formMain.resx">
       <DependentUpon>formMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\BookingGUI.resx">
-      <DependentUpon>BookingGUI.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\DSKH_GUI.resx">
+      <DependentUpon>DSKH_GUI.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\deleteEmployee.resx">
-      <DependentUpon>deleteEmployee.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\DSP_GUI.resx">
+      <DependentUpon>DSP_GUI.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\insertEmployee.resx">
-      <DependentUpon>insertEmployee.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GUI\mainAdmin.resx">
-      <DependentUpon>mainAdmin.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GUI\MainBookingGUI.resx">
-      <DependentUpon>MainBookingGUI.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GUI\RoomInforGUI.resx">
-      <DependentUpon>RoomInforGUI.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GUI\Login.resx">
-      <DependentUpon>Login.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GUI\updateEmployee.resx">
-      <DependentUpon>updateEmployee.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\TTPhong_GUI.resx">
+      <DependentUpon>TTPhong_GUI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -183,8 +134,14 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="Oracle.DataAccess.Common.Configuration.Section.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Oracle.ManagedDataAccess.Client.Configuration.Section.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -198,21 +155,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\219983.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\receptionist.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\basepicture.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\images.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\password2.png" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\System.Text.Json.6.0.1\build\System.Text.Json.targets" Condition="Exists('..\packages\System.Text.Json.6.0.1\build\System.Text.Json.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
