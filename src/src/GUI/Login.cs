@@ -64,10 +64,20 @@ namespace src
                 if (userBUS.checkLogin(username, password)==true)
                 {
                     mainAdmin dba = new mainAdmin(username,password, this);
+                    this.Visible = false;
                     dba.Show();
-                }    
-                
-            }    
+                }
+
+            }
+            else
+            {
+                if (userBUS.checkLogin(username, password) == true)
+                {
+                    formMain user = new formMain(username, password, this);
+                    this.Visible = false;
+                    user.Show();
+                }
+            }
 
         }
     }

@@ -85,13 +85,18 @@
     <Compile Include="BUS\CustomerBUS.cs" />
     <Compile Include="BUS\EmployeeBUS.cs" />
     <Compile Include="BUS\HandleBUS.cs" />
+    <Compile Include="BUS\PhieuDatPhongBUS.cs" />
     <Compile Include="BUS\roomBUS.cs" />
+    <Compile Include="BUS\ServiceBUS.cs" />
     <Compile Include="BUS\userBUS.cs" />
     <Compile Include="Dataprovider.cs" />
     <Compile Include="DB\CustomerDB.cs" />
     <Compile Include="DB\EmployeeDB.cs" />
     <Compile Include="DB\HandleDB.cs" />
     <Compile Include="Connection.cs" />
+    <Compile Include="DB\PhieuDatPhongDB.cs" />
+    <Compile Include="DB\RoomDB.cs" />
+    <Compile Include="DB\ServiceDB.cs" />
     <Compile Include="formMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -103,6 +108,12 @@
     </Compile>
     <Compile Include="GUI\BookingGUI.Designer.cs">
       <DependentUpon>BookingGUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\CustomerServicesGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\CustomerServicesGUI.Designer.cs">
+      <DependentUpon>CustomerServicesGUI.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\deleteEmployee.cs">
       <SubType>Form</SubType>
@@ -153,6 +164,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\BookingGUI.resx">
       <DependentUpon>BookingGUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\CustomerServicesGUI.resx">
+      <DependentUpon>CustomerServicesGUI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\deleteEmployee.resx">
       <DependentUpon>deleteEmployee.cs</DependentUpon>
@@ -212,6 +226,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\password2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\dichvuicon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\System.Text.Json.6.0.1\build\System.Text.Json.targets" Condition="Exists('..\packages\System.Text.Json.6.0.1\build\System.Text.Json.targets')" />

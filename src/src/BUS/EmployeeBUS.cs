@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace src
+namespace src.BUS
 {
     class EmployeeBUS
     {
@@ -23,8 +23,21 @@ namespace src
 
         }
 
+        public static bool checkMaNV(string manv)
+        {
+            return (DB.EmployeeDB.selectMaNV(manv) > 0);
+            
+        }
+        public static bool delNV(string manv)
+        {
+            return (DB.EmployeeDB.deleteNV(manv));
+           
 
-
+        }
+        public static bool upNV(string manv, string diachi, string sdt, string email)
+        {
+            return (DB.EmployeeDB.updateNV(manv, diachi, sdt, email)); 
+        }
     }
 }
 

@@ -28,11 +28,35 @@ namespace src.GUI
         }
         private void loadData()
         {
+            dataGridView1.Refresh();
             conn.Open();
             string query = $"select * from a_nhanvien ";
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridView1.DataSource = Dataprovider.Instance.ExecuteQuery(query);
             conn.Close();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string manv = textBox1.Text;
+            if (BUS.EmployeeBUS.checkMaNV(manv)==true)
+            {
+                bool status = BUS.EmployeeBUS.delNV(manv);
+                if(status==true)
+                {
+                    MessageBox.Show("Xóa thành công");
+                }
+                else
+                {
+                    MessageBox.Show("Xóa thất bại");
+                }
+
+            }
+            else
+            {
+                MessageBox.Show("Mã nhân viên không đúng");
+            }
+            loadData();
         }
     }
 }

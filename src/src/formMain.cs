@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Oracle.ManagedDataAccess.Client;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,8 +14,19 @@ namespace src
     public partial class formMain : Form
     {
         bool sidebarExpand;
-        public formMain()
+        private Form father;
+        private string username;
+        private string password;
+        OracleConnection connect;
+        public formMain(string username, string password, Form father)
         {
+            Connection.username = username;
+            Connection.password = password;
+            OracleConnection conn = Connection.GetDBConnection();
+            this.father = father;
+            this.username = username;
+            this.password = password;
+            this.connect = conn;
             InitializeComponent();
         }
 

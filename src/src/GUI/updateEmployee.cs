@@ -29,5 +29,30 @@ namespace src.GUI
             dataGridView1.DataSource = Dataprovider.Instance.ExecuteQuery(query);
             conn.Close();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string manv = textBox1.Text;
+            string diachi = diachiTB.Text;
+            string email = emailTB.Text;
+            string sdt = sdtTB.Text;
+            if (BUS.EmployeeBUS.checkMaNV(manv) == true)
+            {
+                bool status = BUS.EmployeeBUS.upNV(manv, diachi, sdt, email);
+                if (status == true)
+                {
+                    MessageBox.Show("Cập nhật thành công");
+                }
+                else
+                {
+                    MessageBox.Show("Cập nhật thất bại");
+                }
+                loadData();
+            }
+            else
+            {
+                MessageBox.Show("Mã Nhân viên không đúng");
+            }
+        }
     }
 }

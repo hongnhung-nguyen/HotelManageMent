@@ -29,7 +29,6 @@ namespace src.GUI
         /// </summary>
         private void InitializeComponent()
         {
- 
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -37,15 +36,15 @@ namespace src.GUI
             this.label10 = new System.Windows.Forms.Label();
             this.panel19 = new System.Windows.Forms.Panel();
             this.panel20 = new System.Windows.Forms.Panel();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.sdtTB = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.panel17 = new System.Windows.Forms.Panel();
             this.panel18 = new System.Windows.Forms.Panel();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.diachiTB = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.panel15 = new System.Windows.Forms.Panel();
             this.panel16 = new System.Windows.Forms.Panel();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.emailTB = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -110,7 +109,7 @@ namespace src.GUI
             // panel19
             // 
             this.panel19.Controls.Add(this.panel20);
-            this.panel19.Controls.Add(this.textBox10);
+            this.panel19.Controls.Add(this.sdtTB);
             this.panel19.Location = new System.Drawing.Point(760, 81);
             this.panel19.Name = "panel19";
             this.panel19.Size = new System.Drawing.Size(386, 56);
@@ -124,16 +123,16 @@ namespace src.GUI
             this.panel20.Size = new System.Drawing.Size(348, 1);
             this.panel20.TabIndex = 4;
             // 
-            // textBox10
+            // sdtTB
             // 
-            this.textBox10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.textBox10.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox10.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox10.ForeColor = System.Drawing.Color.Gray;
-            this.textBox10.Location = new System.Drawing.Point(19, 23);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(348, 25);
-            this.textBox10.TabIndex = 0;
+            this.sdtTB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.sdtTB.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.sdtTB.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sdtTB.ForeColor = System.Drawing.Color.Gray;
+            this.sdtTB.Location = new System.Drawing.Point(19, 23);
+            this.sdtTB.Name = "sdtTB";
+            this.sdtTB.Size = new System.Drawing.Size(348, 25);
+            this.sdtTB.TabIndex = 0;
             // 
             // label9
             // 
@@ -149,7 +148,7 @@ namespace src.GUI
             // panel17
             // 
             this.panel17.Controls.Add(this.panel18);
-            this.panel17.Controls.Add(this.textBox9);
+            this.panel17.Controls.Add(this.diachiTB);
             this.panel17.Location = new System.Drawing.Point(760, 12);
             this.panel17.Name = "panel17";
             this.panel17.Size = new System.Drawing.Size(386, 56);
@@ -163,16 +162,16 @@ namespace src.GUI
             this.panel18.Size = new System.Drawing.Size(348, 1);
             this.panel18.TabIndex = 4;
             // 
-            // textBox9
+            // diachiTB
             // 
-            this.textBox9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.textBox9.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox9.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox9.ForeColor = System.Drawing.Color.Gray;
-            this.textBox9.Location = new System.Drawing.Point(19, 23);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(348, 25);
-            this.textBox9.TabIndex = 0;
+            this.diachiTB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.diachiTB.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.diachiTB.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.diachiTB.ForeColor = System.Drawing.Color.Gray;
+            this.diachiTB.Location = new System.Drawing.Point(19, 23);
+            this.diachiTB.Name = "diachiTB";
+            this.diachiTB.Size = new System.Drawing.Size(348, 25);
+            this.diachiTB.TabIndex = 0;
             // 
             // label8
             // 
@@ -188,7 +187,7 @@ namespace src.GUI
             // panel15
             // 
             this.panel15.Controls.Add(this.panel16);
-            this.panel15.Controls.Add(this.textBox8);
+            this.panel15.Controls.Add(this.emailTB);
             this.panel15.Location = new System.Drawing.Point(173, 75);
             this.panel15.Name = "panel15";
             this.panel15.Size = new System.Drawing.Size(386, 56);
@@ -202,16 +201,16 @@ namespace src.GUI
             this.panel16.Size = new System.Drawing.Size(348, 1);
             this.panel16.TabIndex = 4;
             // 
-            // textBox8
+            // emailTB
             // 
-            this.textBox8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.textBox8.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox8.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.ForeColor = System.Drawing.Color.Gray;
-            this.textBox8.Location = new System.Drawing.Point(19, 23);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(348, 25);
-            this.textBox8.TabIndex = 0;
+            this.emailTB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.emailTB.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.emailTB.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.emailTB.ForeColor = System.Drawing.Color.Gray;
+            this.emailTB.Location = new System.Drawing.Point(19, 23);
+            this.emailTB.Name = "emailTB";
+            this.emailTB.Size = new System.Drawing.Size(348, 25);
+            this.emailTB.TabIndex = 0;
             // 
             // button1
             // 
@@ -227,6 +226,7 @@ namespace src.GUI
             this.button1.TabIndex = 37;
             this.button1.Text = "Cập nhật";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // dataGridView1
             // 
@@ -288,15 +288,15 @@ namespace src.GUI
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Panel panel19;
         private System.Windows.Forms.Panel panel20;
-        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox sdtTB;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Panel panel17;
         private System.Windows.Forms.Panel panel18;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox diachiTB;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Panel panel15;
         private System.Windows.Forms.Panel panel16;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox emailTB;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Panel panel1;
