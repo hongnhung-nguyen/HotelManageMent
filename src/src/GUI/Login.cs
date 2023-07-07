@@ -36,5 +36,10 @@ namespace src
         {
             textBox2.SelectAll();
         }
+
+        private void panel6_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

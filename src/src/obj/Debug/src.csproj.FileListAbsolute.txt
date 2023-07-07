@@ -8,3 +8,8 @@ C:\Users\Admin\Desktop\Hotel Management\HotelManageMent\src\src\obj\Debug\src.cs
 C:\Users\Admin\Desktop\Hotel Management\HotelManageMent\src\src\obj\Debug\src.csproj.CoreCompileInputs.cache
 C:\Users\Admin\Desktop\Hotel Management\HotelManageMent\src\src\obj\Debug\src.exe
 C:\Users\Admin\Desktop\Hotel Management\HotelManageMent\src\src\obj\Debug\src.pdb
+C:\Users\Admin\Desktop\Hotel Management\HotelManageMent\src\src\obj\Debug\src.GUI.BookingGUI.resources
+C:\Users\Admin\Desktop\Hotel Management\HotelManageMent\src\src\obj\Debug\src.GUI.MainBookingGUI.resources
+C:\Users\Admin\Desktop\Hotel Management\HotelManageMent\src\src\obj\Debug\src.GUI.RoomInforGUI.resources
+C:\Users\Admin\Desktop\Hotel Management\HotelManageMent\src\src\obj\Debug\src.GUI.insertEmployee.resources
+C:\Users\Admin\Desktop\Hotel Management\HotelManageMent\src\src\obj\Debug\src.Login.resources

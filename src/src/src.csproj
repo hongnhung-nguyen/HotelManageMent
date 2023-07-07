@@ -69,6 +69,12 @@
     <Compile Include="GUI\BookingGUI.Designer.cs">
       <DependentUpon>BookingGUI.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\insertEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\insertEmployee.Designer.cs">
+      <DependentUpon>insertEmployee.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\MainBookingGUI.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,6 +87,12 @@
     <Compile Include="GUI\RoomInforGUI.Designer.cs">
       <DependentUpon>RoomInforGUI.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -89,11 +101,17 @@
     <EmbeddedResource Include="GUI\BookingGUI.resx">
       <DependentUpon>BookingGUI.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\insertEmployee.resx">
+      <DependentUpon>insertEmployee.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\MainBookingGUI.resx">
       <DependentUpon>MainBookingGUI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\RoomInforGUI.resx">
       <DependentUpon>RoomInforGUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -123,6 +141,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\receptionist.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\basepicture.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\password2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
