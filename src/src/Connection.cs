@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Oracle.DataAccess.Client;
+using Oracle.ManagedDataAccess.Client;
 
 
 namespace src
@@ -16,9 +16,9 @@ namespace src
 
         const string host = "localhost";
         const int port = 1521;
-        const string sid = "xe";
+        const string sid = "HOTEL";
 
-        Connection()
+         Connection()
         {
             username = "NV041";
             password = "NV041";

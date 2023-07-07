@@ -1,5 +1,9 @@
 # HotelManageMent
 
+# Introduction:
+<p>This project is built in Winform .NET and Oracle</br>
+
+# Contributors:
 <p>Trịnh Hữu Hiệp 20120079 <br>
 <p>Nguyễn Thị Hồng Nhung 20120093<br>
 <p>Trần Thái San 20120177<br>

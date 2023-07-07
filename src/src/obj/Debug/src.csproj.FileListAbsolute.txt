@@ -8,40 +8,32 @@ C:\Users\Admin\Desktop\Hotel Management\HotelManageMent\src\src\obj\Debug\src.cs
 C:\Users\Admin\Desktop\Hotel Management\HotelManageMent\src\src\obj\Debug\src.csproj.CoreCompileInputs.cache
 C:\Users\Admin\Desktop\Hotel Management\HotelManageMent\src\src\obj\Debug\src.exe
 C:\Users\Admin\Desktop\Hotel Management\HotelManageMent\src\src\obj\Debug\src.pdb
-D:\Phân tích thiết kế hệ thống thông tin\Đồ Án\HotelManageMent\src\src\bin\Debug\src.exe.config
-D:\Phân tích thiết kế hệ thống thông tin\Đồ Án\HotelManageMent\src\src\bin\Debug\src.exe
-D:\Phân tích thiết kế hệ thống thông tin\Đồ Án\HotelManageMent\src\src\bin\Debug\src.pdb
-D:\Phân tích thiết kế hệ thống thông tin\Đồ Án\HotelManageMent\src\src\bin\Debug\Oracle.DataAccess.dll
-D:\Phân tích thiết kế hệ thống thông tin\Đồ Án\HotelManageMent\src\src\obj\Debug\src.formMain.resources
-D:\Phân tích thiết kế hệ thống thông tin\Đồ Án\HotelManageMent\src\src\obj\Debug\src.GUI.BookingGUI.resources
-D:\Phân tích thiết kế hệ thống thông tin\Đồ Án\HotelManageMent\src\src\obj\Debug\src.GUI.MainBookingGUI.resources
-D:\Phân tích thiết kế hệ thống thông tin\Đồ Án\HotelManageMent\src\src\obj\Debug\src.GUI.RoomInforGUI.resources
-D:\Phân tích thiết kế hệ thống thông tin\Đồ Án\HotelManageMent\src\src\obj\Debug\src.Properties.Resources.resources
-D:\Phân tích thiết kế hệ thống thông tin\Đồ Án\HotelManageMent\src\src\obj\Debug\src.csproj.GenerateResource.cache
-D:\Phân tích thiết kế hệ thống thông tin\Đồ Án\HotelManageMent\src\src\obj\Debug\src.csproj.CoreCompileInputs.cache
-D:\Phân tích thiết kế hệ thống thông tin\Đồ Án\HotelManageMent\src\src\obj\Debug\src.csproj.CopyComplete
-D:\Phân tích thiết kế hệ thống thông tin\Đồ Án\HotelManageMent\src\src\obj\Debug\src.exe
-D:\Phân tích thiết kế hệ thống thông tin\Đồ Án\HotelManageMent\src\src\obj\Debug\src.pdb
-D:\Phân tích thiết kế hệ thống thông tin\Đồ Án\HotelManageMent\src\src\obj\Debug\src.GUI.CustomerServicesGUI.resources
-D:\Phân tích thiết kế hệ thống thông tin\Đồ Án\HotelManageMent\src\src\obj\Debug\src.ShowNotification.resources
-D:\Phân tích thiết kế hệ thống thông tin\Đồ Án\HotelManageMent\src\src\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
-D:\Phân tích thiết kế hệ thống thông tin\Đồ Án\HotelManageMent\src\src\bin\Debug\Oracle.ManagedDataAccess.dll
-D:\Phân tích thiết kế hệ thống thông tin\Đồ Án\HotelManageMent\src\src\bin\Debug\System.Buffers.dll
-D:\Phân tích thiết kế hệ thống thông tin\Đồ Án\HotelManageMent\src\src\bin\Debug\System.Memory.dll
-D:\Phân tích thiết kế hệ thống thông tin\Đồ Án\HotelManageMent\src\src\bin\Debug\System.Numerics.Vectors.dll
-D:\Phân tích thiết kế hệ thống thông tin\Đồ Án\HotelManageMent\src\src\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
-D:\Phân tích thiết kế hệ thống thông tin\Đồ Án\HotelManageMent\src\src\bin\Debug\System.Text.Encodings.Web.dll
-D:\Phân tích thiết kế hệ thống thông tin\Đồ Án\HotelManageMent\src\src\bin\Debug\System.Text.Json.dll
-D:\Phân tích thiết kế hệ thống thông tin\Đồ Án\HotelManageMent\src\src\bin\Debug\System.Threading.Tasks.Extensions.dll
-D:\Phân tích thiết kế hệ thống thông tin\Đồ Án\HotelManageMent\src\src\bin\Debug\System.ValueTuple.dll
-D:\Phân tích thiết kế hệ thống thông tin\Đồ Án\HotelManageMent\src\src\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
-D:\Phân tích thiết kế hệ thống thông tin\Đồ Án\HotelManageMent\src\src\bin\Debug\System.Buffers.xml
-D:\Phân tích thiết kế hệ thống thông tin\Đồ Án\HotelManageMent\src\src\bin\Debug\System.Memory.xml
-D:\Phân tích thiết kế hệ thống thông tin\Đồ Án\HotelManageMent\src\src\bin\Debug\System.Numerics.Vectors.xml
-D:\Phân tích thiết kế hệ thống thông tin\Đồ Án\HotelManageMent\src\src\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
-D:\Phân tích thiết kế hệ thống thông tin\Đồ Án\HotelManageMent\src\src\bin\Debug\System.Text.Encodings.Web.xml
-D:\Phân tích thiết kế hệ thống thông tin\Đồ Án\HotelManageMent\src\src\bin\Debug\System.Text.Json.xml
-D:\Phân tích thiết kế hệ thống thông tin\Đồ Án\HotelManageMent\src\src\bin\Debug\System.Threading.Tasks.Extensions.xml
-D:\Phân tích thiết kế hệ thống thông tin\Đồ Án\HotelManageMent\src\src\bin\Debug\System.ValueTuple.xml
-D:\Phân tích thiết kế hệ thống thông tin\Đồ Án\HotelManageMent\src\src\bin\Debug\Microsoft.SqlServer.IntegrationServices.ODataConnectionManager.dll
-D:\Phân tích thiết kế hệ thống thông tin\Đồ Án\HotelManageMent\src\src\obj\Debug\src.csprojAssemblyReference.cache
+C:\Users\Admin\Desktop\Hotel Management\HotelManageMent\src\src\obj\Debug\src.GUI.BookingGUI.resources
+C:\Users\Admin\Desktop\Hotel Management\HotelManageMent\src\src\obj\Debug\src.GUI.MainBookingGUI.resources
+C:\Users\Admin\Desktop\Hotel Management\HotelManageMent\src\src\obj\Debug\src.GUI.RoomInforGUI.resources
+C:\Users\Admin\Desktop\Hotel Management\HotelManageMent\src\src\obj\Debug\src.GUI.insertEmployee.resources
+C:\Users\Admin\Desktop\Hotel Management\HotelManageMent\src\src\obj\Debug\src.Login.resources
+C:\Users\Admin\Desktop\Hotel Management\HotelManageMent\src\src\obj\Debug\src.GUI.mainAdmin.resources
+C:\Users\Admin\Desktop\Hotel Management\HotelManageMent\src\src\obj\Debug\src.GUI.deleteEmployee.resources
+C:\Users\Admin\Desktop\Hotel Management\HotelManageMent\src\src\obj\Debug\src.GUI.updateEmployee.resources
+C:\Users\Admin\Desktop\Hotel Management\HotelManageMent\src\src\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Admin\Desktop\Hotel Management\HotelManageMent\src\src\bin\Debug\Microsoft.SqlServer.IntegrationServices.ODataConnectionManager.dll
+C:\Users\Admin\Desktop\Hotel Management\HotelManageMent\src\src\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\Admin\Desktop\Hotel Management\HotelManageMent\src\src\bin\Debug\System.Buffers.dll
+C:\Users\Admin\Desktop\Hotel Management\HotelManageMent\src\src\bin\Debug\System.Memory.dll
+C:\Users\Admin\Desktop\Hotel Management\HotelManageMent\src\src\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Admin\Desktop\Hotel Management\HotelManageMent\src\src\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Admin\Desktop\Hotel Management\HotelManageMent\src\src\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\Admin\Desktop\Hotel Management\HotelManageMent\src\src\bin\Debug\System.Text.Json.dll
+C:\Users\Admin\Desktop\Hotel Management\HotelManageMent\src\src\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Admin\Desktop\Hotel Management\HotelManageMent\src\src\bin\Debug\System.ValueTuple.dll
+C:\Users\Admin\Desktop\Hotel Management\HotelManageMent\src\src\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Admin\Desktop\Hotel Management\HotelManageMent\src\src\bin\Debug\System.Buffers.xml
+C:\Users\Admin\Desktop\Hotel Management\HotelManageMent\src\src\bin\Debug\System.Memory.xml
+C:\Users\Admin\Desktop\Hotel Management\HotelManageMent\src\src\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Admin\Desktop\Hotel Management\HotelManageMent\src\src\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Admin\Desktop\Hotel Management\HotelManageMent\src\src\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\Admin\Desktop\Hotel Management\HotelManageMent\src\src\bin\Debug\System.Text.Json.xml
+C:\Users\Admin\Desktop\Hotel Management\HotelManageMent\src\src\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Admin\Desktop\Hotel Management\HotelManageMent\src\src\bin\Debug\System.ValueTuple.xml
+C:\Users\Admin\Desktop\Hotel Management\HotelManageMent\src\src\obj\Debug\src.csproj.CopyComplete

@@ -16,7 +16,8 @@ namespace src
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new GUI.MainBookingGUI());
+            Login login = new Login();
+            Application.Run(login);
         }
     }
 }
