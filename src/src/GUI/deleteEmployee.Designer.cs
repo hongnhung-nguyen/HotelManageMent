@@ -142,6 +142,7 @@ namespace src.GUI
             this.ClientSize = new System.Drawing.Size(1175, 706);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dataGridView1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "deleteEmployee";
             this.Text = "deleteEmployee";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

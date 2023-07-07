@@ -1,4 +1,6 @@
-﻿using System;
+﻿using dataProvider;
+using Oracle.ManagedDataAccess.Client;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +14,20 @@ namespace src.GUI
 {
     public partial class updateEmployee : Form
     {
-        public updateEmployee()
+        OracleConnection conn;
+        public updateEmployee(OracleConnection connect)
         {
+            this.conn = connect;
             InitializeComponent();
+            loadData();
+        }
+        private void loadData()
+        {
+            conn.Open();
+            string query = $"select * from a_nhanvien ";
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridView1.DataSource = Dataprovider.Instance.ExecuteQuery(query);
+            conn.Close();
         }
     }
 }

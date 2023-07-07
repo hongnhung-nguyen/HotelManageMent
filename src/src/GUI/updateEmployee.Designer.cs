@@ -29,6 +29,7 @@ namespace src.GUI
         /// </summary>
         private void InitializeComponent()
         {
+ 
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -260,6 +261,7 @@ namespace src.GUI
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "updateEmployee";
             this.Text = "updateEmployee";
             this.panel2.ResumeLayout(false);

@@ -33,6 +33,7 @@ namespace src
             this.sidebar = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.menuButton = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -43,18 +44,17 @@ namespace src
             this.button4 = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
             this.button5 = new System.Windows.Forms.Button();
-            this.sidebarTimer = new System.Windows.Forms.Timer(this.components);
-            this.menuButton = new System.Windows.Forms.PictureBox();
             this.panel7 = new System.Windows.Forms.Panel();
             this.button6 = new System.Windows.Forms.Button();
+            this.sidebarTimer = new System.Windows.Forms.Timer(this.components);
             this.sidebar.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.menuButton)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.menuButton)).BeginInit();
             this.panel7.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -69,10 +69,10 @@ namespace src
             this.sidebar.Controls.Add(this.panel6);
             this.sidebar.Controls.Add(this.panel7);
             this.sidebar.Location = new System.Drawing.Point(0, 0);
-            this.sidebar.MaximumSize = new System.Drawing.Size(300, 680);
-            this.sidebar.MinimumSize = new System.Drawing.Size(98, 500);
+            this.sidebar.MaximumSize = new System.Drawing.Size(300, 700);
+            this.sidebar.MinimumSize = new System.Drawing.Size(98, 700);
             this.sidebar.Name = "sidebar";
-            this.sidebar.Size = new System.Drawing.Size(300, 680);
+            this.sidebar.Size = new System.Drawing.Size(300, 700);
             this.sidebar.TabIndex = 0;
             // 
             // panel1
@@ -94,6 +94,18 @@ namespace src
             this.label1.Size = new System.Drawing.Size(64, 23);
             this.label1.TabIndex = 1;
             this.label1.Text = "Menu";
+            // 
+            // menuButton
+            // 
+            this.menuButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.menuButton.Image = global::src.Properties.Resources.iconbar;
+            this.menuButton.Location = new System.Drawing.Point(9, 39);
+            this.menuButton.Name = "menuButton";
+            this.menuButton.Size = new System.Drawing.Size(69, 46);
+            this.menuButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.menuButton.TabIndex = 0;
+            this.menuButton.TabStop = false;
+            this.menuButton.Click += new System.EventHandler(this.menuButton_Click);
             // 
             // panel2
             // 
@@ -194,23 +206,6 @@ namespace src
             this.button5.Text = "Check out";
             this.button5.UseVisualStyleBackColor = true;
             // 
-            // sidebarTimer
-            // 
-            this.sidebarTimer.Interval = 3;
-            this.sidebarTimer.Tick += new System.EventHandler(this.sidebarTimer_Tick);
-            // 
-            // menuButton
-            // 
-            this.menuButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.menuButton.Image = global::src.Properties.Resources.iconbar;
-            this.menuButton.Location = new System.Drawing.Point(9, 39);
-            this.menuButton.Name = "menuButton";
-            this.menuButton.Size = new System.Drawing.Size(69, 46);
-            this.menuButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.menuButton.TabIndex = 0;
-            this.menuButton.TabStop = false;
-            this.menuButton.Click += new System.EventHandler(this.menuButton_Click);
-            // 
             // panel7
             // 
             this.panel7.Controls.Add(this.button6);
@@ -231,12 +226,17 @@ namespace src
             this.button6.Text = "Log out";
             this.button6.UseVisualStyleBackColor = true;
             // 
+            // sidebarTimer
+            // 
+            this.sidebarTimer.Interval = 3;
+            this.sidebarTimer.Tick += new System.EventHandler(this.sidebarTimer_Tick);
+            // 
             // formMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(141)))), ((int)(((byte)(85)))));
-            this.ClientSize = new System.Drawing.Size(1034, 687);
+            this.ClientSize = new System.Drawing.Size(1028, 694);
             this.Controls.Add(this.sidebar);
             this.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -246,20 +246,18 @@ namespace src
             this.sidebar.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.menuButton)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.menuButton)).EndInit();
             this.panel7.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.FlowLayoutPanel sidebar;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button button1;
@@ -276,6 +274,7 @@ namespace src
         private System.Windows.Forms.Timer sidebarTimer;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.FlowLayoutPanel sidebar;
     }
 }
 
