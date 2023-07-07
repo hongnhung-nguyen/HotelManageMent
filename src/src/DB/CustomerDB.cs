@@ -38,10 +38,14 @@ namespace src.DB
             string query = $"select A.MAKH from HOTEL_PUBLIC.A_KHACHHANG A WHERE A.CCCD = '{cccd}'";
             OracleCommand command = new OracleCommand(query, conn);
             var reader = command.ExecuteReader();
-            while (reader.Read())
+            if(reader.HasRows)
             {
-                return (reader["MAKH"].ToString());
-            }
+                while (reader.Read())
+                {
+                    return (reader["MAKH"].ToString());
+                }
+            }    
+            
             conn.Close();
             return "";
         }
@@ -56,29 +60,6 @@ namespace src.DB
             conn.Close();
             return result;
         }
-
-        //MAKH VARCHAR2(10),
-        //HOTEN NVARCHAR2(50),
-        //GIOITINH NVARCHAR2(10),
-        //NGAYSINH DATE,
-        //SDT         VARCHAR2(20),
-        //CCCD VARCHAR2(12) ,
-        //EMAIL VARCHAR2(100),
-        //DIACHI NVARCHAR2(100),
-
-        //public customerBUS(string MaKH, string HoTen, string GioiTinh, DateTime NgaySinh, string SDT, string CCCD, string Email, string DiaChi)
-        //{
-        //    this.MaKH = MaKH;
-        //    this.HoTen = HoTen;
-        //    this.GioiTinh = GioiTinh;
-        //    this.NgaySinh = NgaySinh;
-        //    this.SDT = SDT;
-        //    this.CCCD = CCCD;
-        //    this.Email = Email;
-        //    this.DiaChi = DiaChi;
-        //}
-
-
 
         public static customerBUS getCustomer(string MaKH)
         {

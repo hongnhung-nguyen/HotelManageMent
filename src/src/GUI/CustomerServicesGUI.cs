@@ -52,6 +52,7 @@ namespace src.GUI
             if(ServiceBUS.insertCTDV(MaPhieuDV, MaDV, GiaDV))
             {
                 dataGridView_DV_KhachHang.DataSource = ServiceBUS.getListCTDV(MaPhieuDV);
+                ServiceBUS.UpdateTongTienPhieuDV(MaPhieuDV);
             }
             else
             {
@@ -64,6 +65,20 @@ namespace src.GUI
         private void button2_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string MaDV = ServiceBUS.getMaDVByName(comboBox_DVName.Text.ToString());
+            if (ServiceBUS.DropCTDVu(MaPhieuDV, MaDV))
+            {
+                dataGridView_DV_KhachHang.DataSource = ServiceBUS.getListCTDV(MaPhieuDV);
+                ServiceBUS.UpdateTongTienPhieuDV(MaPhieuDV);
+            }
+            else
+            {
+                MessageBox.Show("Dịch vụ đã được xóa, vui lòng chọn dịch vụ khác !!");
+            }
         }
     }
 }

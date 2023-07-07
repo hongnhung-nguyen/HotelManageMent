@@ -64,6 +64,19 @@ namespace src.BUS
         {
             return ServiceDB.LayDSDV_byMaPhong(MaPhong);
         }
+        public static bool UpdateTongTienPhieuDV(string MaPhieuDV)
+        {
+            if(ServiceDB.UpdateTongTienPhieuDV(MaPhieuDV) >=1)
+            {
+                return true;
+            }
+            return false;
+        }
+
+        public static bool DropCTDVu(string MaPhieuDV, string maDV)
+        {
+            return ServiceDB.DropCTDVu(MaPhieuDV, maDV);
+        }
     }
 
 }

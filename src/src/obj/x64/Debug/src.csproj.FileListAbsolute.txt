@@ -29,7 +29,6 @@ D:\Phân tích thiết kế hệ thống thông tin\Đồ Án\HotelManageMent\sr
 D:\Phân tích thiết kế hệ thống thông tin\Đồ Án\HotelManageMent\src\src\obj\x64\Debug\src.GUI.BookingGUI.resources
 D:\Phân tích thiết kế hệ thống thông tin\Đồ Án\HotelManageMent\src\src\obj\x64\Debug\src.GUI.RoomInforGUI.resources
 D:\Phân tích thiết kế hệ thống thông tin\Đồ Án\HotelManageMent\src\src\obj\x64\Debug\src.Properties.Resources.resources
-D:\Phân tích thiết kế hệ thống thông tin\Đồ Án\HotelManageMent\src\src\obj\x64\Debug\src.ShowNotification.resources
 D:\Phân tích thiết kế hệ thống thông tin\Đồ Án\HotelManageMent\src\src\obj\x64\Debug\src.csproj.GenerateResource.cache
 D:\Phân tích thiết kế hệ thống thông tin\Đồ Án\HotelManageMent\src\src\obj\x64\Debug\src.csproj.CoreCompileInputs.cache
 D:\Phân tích thiết kế hệ thống thông tin\Đồ Án\HotelManageMent\src\src\obj\x64\Debug\src.csproj.CopyComplete

@@ -96,11 +96,14 @@ namespace src.GUI
             // comboBox_TTPhong
             // 
             this.comboBox_TTPhong.FormattingEnabled = true;
+            this.comboBox_TTPhong.Items.AddRange(new object[] {
+            "Trống",
+            "Đã đặt"});
             this.comboBox_TTPhong.Location = new System.Drawing.Point(127, 30);
             this.comboBox_TTPhong.Name = "comboBox_TTPhong";
             this.comboBox_TTPhong.Size = new System.Drawing.Size(222, 28);
             this.comboBox_TTPhong.TabIndex = 9;
-            this.comboBox_TTPhong.Text = "All";
+            this.comboBox_TTPhong.Text = "Trống";
             this.comboBox_TTPhong.SelectedIndexChanged += new System.EventHandler(this.comboBox_TTPhong_SelectedIndexChanged);
             // 
             // label5

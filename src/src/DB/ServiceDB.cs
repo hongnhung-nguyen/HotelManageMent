@@ -28,7 +28,7 @@ namespace src.DB
             return data;
         }
 
-        public static DataTable getlistCTDV( string MaPhieuDV)
+        public static DataTable getlistCTDV(string MaPhieuDV)
         {
             string query = $"SELECT * from HOTEL_PUBLIC.A_CHITIETPHIEUDV A, HOTEL_PUBLIC.A_PHIEUDV B where A.MAPHIEU = B.MAPHIEU AND B.TINHTRANG = 'Chưa thanh toán' AND  B.MAPHIEU = '{MaPhieuDV}'";
             DataTable data = new DataTable();
@@ -58,7 +58,7 @@ namespace src.DB
             return result >= 1 ? true : false;
         }
 
-        public static bool InsertCTDVu(string MaPhieu, string MaDV,float sotien)
+        public static bool InsertCTDVu(string MaPhieu, string MaDV, float sotien)
         {
             OracleConnection conn = Connection.GetDBConnection();
             conn.Open();
@@ -124,8 +124,6 @@ namespace src.DB
         }
 
 
-
-
         public static int DemTongPhieuDV()
         {
             OracleConnection conn = Connection.GetDBConnection();
@@ -161,7 +159,7 @@ namespace src.DB
         {
             OracleConnection conn = Connection.GetDBConnection();
             conn.Open();
-            
+
             string query = $"INSERT INTO HOTEL_PUBLIC.A_PHIEUDV VALUES ('{maPhieu}',0,'{MaNV}',TO_DATE('{DateTime.Now.ToString().Substring(0, DateTime.Now.ToString().Length - 3)}', 'dd/mm/yyyy HH:mi:ss'),'{MaKH}', '{MaPhong}','Chưa thanh toán')";
             OracleCommand command = new OracleCommand(query, conn);
             int result = Convert.ToInt32(command.ExecuteNonQuery());
@@ -189,6 +187,23 @@ namespace src.DB
             }
             return data;
         }
-        
+
+
+
+        public static int UpdateTongTienPhieuDV(string maPhieu)
+        {
+            OracleConnection conn = Connection.GetDBConnection();
+            conn.Open();
+            string query = $"HOTEL_PUBLIC.UpdateTongTienPhieuDV";
+
+            OracleCommand command = new OracleCommand(query, conn);
+            command.CommandType = CommandType.StoredProcedure;
+
+            command.Parameters.Add(new OracleParameter("maPhieu", maPhieu));
+            
+            int result = Convert.ToInt32(command.ExecuteNonQuery());
+            conn.Close();
+            return result;
+        }
     }
 }

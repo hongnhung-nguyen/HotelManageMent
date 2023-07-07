@@ -114,6 +114,7 @@ CREATE TABLE A_PHIEUDATPHONG(
     MAKH            VARCHAR2(10),
     TONGTIEN        DECIMAL(10,0),
     DATHANHTOAN     DECIMAL(10,0),
+    TraPhong number, --0 là chưa trả, 1 là trả rồi
     CONSTRAINT PL_PHIEUDATPHONG PRIMARY KEY(MAPHIEU)
 );
 /
@@ -157,3 +158,26 @@ CREATE TABLE A_DOAN(
     TENHDVIEN   NVARCHAR2(100),
     CONSTRAINT PK_DOAN PRIMARY KEY (MADOAN)
 );
+
+/
+-- proc
+create or replace procedure UpdateTongTienPhieuDV( P_maPhieu IN varchar2)
+is 
+    v_count1 INTEGER;
+begin 
+
+    SELECT count(*) INTO v_count1 FROM HOTEL_PUBLIC.A_PHIEUDV A, HOTEL_PUBLIC.A_CHITIETPHIEUDV C 
+    WHERE A.MAPHIEU = C.MAPHIEU AND A.MAPHIEU = P_maPhieu AND A.TINHTRANG = 'Chưa thanh toán';
+    
+    update A_PHIEUDV set TONGTIEN = v_count1*300000 where MAPHIEU = P_maPhieu;
+    
+end;
+-- user NV041
+grant select on  A_PHONG to NV041;
+grant select, insert, update on A_KHACHHANG to NV041;
+grant select, insert, update on A_PHONG to NV041;
+grant select, insert, update on A_PHIEUDATPHONG to NV041;
+grant select, insert, update on A_PHIEUDV to NV041;
+grant select, insert, update on A_DICHVU to NV041;
+grant select, insert, update, delete on A_CHITIETPHIEUDV to NV041;
+grant execute on UpdateTongTienPhieuDV to NV041;

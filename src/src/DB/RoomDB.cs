@@ -38,7 +38,7 @@ namespace src.DB
         public static DataTable getRoomListDB(string tinhTrang, string loaiPhong, float mucGiaMin, float mucGiaMax)
         {
             DataTable result = new DataTable();
-            string query = $"select * from HOTEL_PUBLIC.A_PHONG A";// where A.GIA >= {mucGiaMin} and  A.GIA < {mucGiaMax}";//and A.LOAIPHONG = '{loaiPhong}'    A.TINHTRANG = '{tinhTrang}' and
+            string query = $"select * from HOTEL_PUBLIC.A_PHONG A where A.GIA >= {mucGiaMin} and  A.GIA < {mucGiaMax} and  A.TINHTRANG = '{tinhTrang}'";//and A.LOAIPHONG = '{loaiPhong}'  
             OracleConnection conn = Connection.GetDBConnection();
             conn.Open();
             OracleCommand command = new OracleCommand(query, conn);

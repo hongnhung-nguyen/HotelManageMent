@@ -97,7 +97,6 @@ namespace src.GUI
             this.groupBox1.TabIndex = 40;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông Tin Đặt Phòng";
-            //this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // dateTimeNgaySinh
             // 
@@ -180,7 +179,7 @@ namespace src.GUI
             this.txCMNN.Name = "txCMNN";
             this.txCMNN.Size = new System.Drawing.Size(208, 26);
             this.txCMNN.TabIndex = 63;
-            //this.txCMNN.TextChanged += new System.EventHandler(this.txCMNN_TextChanged);
+            this.txCMNN.TextChanged += new System.EventHandler(this.txCMNN_TextChanged);
             // 
             // txt_tenKH
             // 
@@ -288,7 +287,6 @@ namespace src.GUI
             this.tx_maphong.Name = "tx_maphong";
             this.tx_maphong.Size = new System.Drawing.Size(208, 26);
             this.tx_maphong.TabIndex = 50;
-            //this.tx_maphong.TextChanged += new System.EventHandler(this.tx_maphong_TextChanged);
             // 
             // tb_giaPhong
             // 
@@ -296,7 +294,6 @@ namespace src.GUI
             this.tb_giaPhong.Name = "tb_giaPhong";
             this.tb_giaPhong.Size = new System.Drawing.Size(168, 26);
             this.tb_giaPhong.TabIndex = 49;
-            //this.tb_giaPhong.TextChanged += new System.EventHandler(this.tb_giaPhong_TextChanged);
             // 
             // label11
             // 

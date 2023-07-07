@@ -48,8 +48,8 @@ namespace src.GUI
                 return;
 
             }
-
-
+            //================================
+            decimal giaPhong = decimal.Parse(tb_giaPhong.Text);
             PhieuDatPhongBUS Phieu = new PhieuDatPhongBUS(
                                                             MaPhieu,
                                                             MaPhong,
@@ -59,7 +59,7 @@ namespace src.GUI
                                                             MaNV,
                                                             NgayLap,
                                                             MaKH,
-                                                            0,
+                                                            giaPhong,
                                                             20 * Convert.ToInt32(tb_giaPhong.Text) / 100,
                                                             0
             );
@@ -81,12 +81,12 @@ namespace src.GUI
             string MaPhong = tx_maphong.Text.ToString();
             string maNV = Connection.username;
             string maPhieu = ServiceBUS.TaoMaPhieuDV();
-            
-            if(ServiceBUS.TaoPhieuDichvu(MaKH, MaPhong, maNV, maPhieu) != true)
+
+
+            if (ServiceBUS.TaoPhieuDichvu(MaKH, MaPhong, maNV, maPhieu) != true)
             {
                 MessageBox.Show("Tạo Phiếu dịch Vụ bị lỗi, vui lòng kiểm tra lại !");
-            }  
-           
+            }
 
             this.Hide();
             CustomerServicesGUI cs = new CustomerServicesGUI(maPhieu);
@@ -122,6 +122,20 @@ namespace src.GUI
                 }
                 
             }    
+        }
+
+        private void txCMNN_TextChanged(object sender, EventArgs e)
+        {
+            string maKH = customerBUS.getMaKHByCCCD(txCMNN.Text.ToString());
+            if (maKH != "")
+            {
+                customerBUS cus = customerBUS.getCustomer(maKH);
+                this.txt_tenKH.Text = cus.HoTen;
+                this.dateTimeNgaySinh.Value = cus.NgaySinh;
+                this.textBox_Gmail.Text = cus.Email;
+                this.textBox_DiaChi.Text = cus.DiaChi;
+                this.textSdt.Text = cus.SDT;
+            } 
         }
     }
 }
