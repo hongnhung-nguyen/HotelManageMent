@@ -46,6 +46,7 @@ namespace src.BUS
         {
             return (DB.EmployeeDB.insertNV(MaNV, tennv, phai, ngaysinh, sdt, cccd, email, vaitro, diachi, matkhau));
         }
+
     }
 }
 

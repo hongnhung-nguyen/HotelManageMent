@@ -5,7 +5,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using src.BUS;
 namespace src.DB
 {
     class EmployeeDB
@@ -55,5 +55,6 @@ namespace src.DB
             conn.Close();
             return result >= 1 ? true : false;
         }
+
     }
 }
