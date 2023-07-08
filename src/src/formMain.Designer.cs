@@ -240,7 +240,7 @@ namespace src
             this.pnChildForm.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnChildForm.Location = new System.Drawing.Point(300, 0);
             this.pnChildForm.Name = "pnChildForm";
-            this.pnChildForm.Size = new System.Drawing.Size(928, 744);
+            this.pnChildForm.Size = new System.Drawing.Size(897, 686);
             this.pnChildForm.TabIndex = 1;
             // 
             // formMain
@@ -248,7 +248,7 @@ namespace src
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(141)))), ((int)(((byte)(85)))));
-            this.ClientSize = new System.Drawing.Size(1228, 744);
+            this.ClientSize = new System.Drawing.Size(1197, 686);
             this.Controls.Add(this.pnChildForm);
             this.Controls.Add(this.sidebar);
             this.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

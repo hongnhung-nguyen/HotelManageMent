@@ -84,7 +84,8 @@ namespace src
 
         private void button4_Click(object sender, EventArgs e)
         {
-            openChildForm(new GUI.MainBookingGUI());
+            GUI.MainBookingGUI booking = new GUI.MainBookingGUI();
+            booking.Show();
         }
     }
 }

@@ -68,7 +68,7 @@ namespace src.GUI
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(12, 11);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(698, 223);
+            this.groupBox1.Size = new System.Drawing.Size(681, 223);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Lọc Thông Tin ****";
@@ -202,9 +202,9 @@ namespace src.GUI
             this.groupBox2.Controls.Add(this.textBoxMaPhong);
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Controls.Add(this.label6);
-            this.groupBox2.Location = new System.Drawing.Point(708, 11);
+            this.groupBox2.Location = new System.Drawing.Point(695, 11);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(496, 223);
+            this.groupBox2.Size = new System.Drawing.Size(509, 223);
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Thông Tin Phòng";
@@ -277,13 +277,13 @@ namespace src.GUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1217, 750);
+            this.ClientSize = new System.Drawing.Size(1221, 744);
             this.Controls.Add(this.dataGridView);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Location = new System.Drawing.Point(100, 100);
-            this.MaximumSize = new System.Drawing.Size(1239, 806);
-            this.MinimumSize = new System.Drawing.Size(1239, 806);
+            this.MaximumSize = new System.Drawing.Size(1243, 800);
+            this.MinimumSize = new System.Drawing.Size(800, 800);
             this.Name = "MainBookingGUI";
             this.Text = "BookingGUI";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
