@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Oracle.DataAccess.Client;
+using Oracle.ManagedDataAccess.Client;
 using src.DB;
 using src.BUS;
 
@@ -19,8 +19,11 @@ namespace src
         string MAPHONG = "";
         public TTPhong(string ma)
         {
-            InitializeComponent();
             MAPHONG = ma;
+            InitializeComponent();
+            
+            //TTPhong_Load();
+            LoadTTP(MAPHONG);
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -61,35 +64,37 @@ namespace src
                 MessageBox.Show("Cập nhập thất bại");
             }
         }
-       /* private void LoadTTP(string maphong)
+       private void LoadTTP(string maphong)
         {
-            Oracle.DataAccess.Client.OracleConnection conn = Connection.GetDBConnection();
+            Oracle.ManagedDataAccess.Client.OracleConnection conn = Connection.GetDBConnection();
             conn.Open();
             textBox1.Text = maphong;
             textBox1.Enabled = false;
 
-            string orlselect1 = $"SELECT LOAIPHONG FORM A_PHONG WHERE MAPHONG = " + maphong + " ";
+            string orlselect1 = $"SELECT LOAIPHONG FroM HOTEL_PUBLIC.A_PHONG WHERE MAPHONG = '" + maphong + "'";
             OracleCommand cmd1 = new OracleCommand(orlselect1, conn);
             textBox2.Text = Convert.ToString(cmd1.ExecuteScalar());
 
-            string orlselect2 = $"SELECT GIA FORM A_PHONG WHERE MAPHONG = " + maphong + " ";
+            string orlselect2 = $"SELECT GIA FroM HOTEL_PUBLIC.A_PHONG WHERE MAPHONG = '" + maphong + "' ";
             OracleCommand cmd2 = new OracleCommand(orlselect2, conn);
             textBox3.Text = Convert.ToString(cmd2.ExecuteScalar());
 
-            string orlselect3 = $"SELECT TINHTRANG FORM A_PHONG WHERE MAPHONG = " + maphong + " ";
+            string orlselect3 = $"SELECT TINHTRANG FroM HOTEL_PUBLIC.A_PHONG WHERE MAPHONG = '" + maphong + "' ";
             OracleCommand cmd3 = new OracleCommand(orlselect3, conn);
             textBox4.Text = Convert.ToString(cmd3.ExecuteScalar());
 
-            string orlselect4 = $"SELECT SONGUOI FORM A_PHONG WHERE MAPHONG = " + maphong + " ";
+            string orlselect4 = $"SELECT SONGUOI FroM  HOTEL_PUBLIC.A_PHONG WHERE MAPHONG = '" + maphong + "' ";
             OracleCommand cmd4 = new OracleCommand(orlselect4, conn);
             textBox5.Text = Convert.ToString(cmd4.ExecuteScalar());
             
             conn.Close();
-        }*/
-        private void TTPhong_Load(object sender, EventArgs e)
+        }
+        private void TTPhong_Load()
         {
+            
             textBox1.Text = MAPHONG;
             textBox1.Enabled = false;
+            
             textBox2.Text = Room_DB.getTTPhong(MAPHONG).LoaiPhong;
             textBox3.Text = Room_DB.getTTPhong(MAPHONG).Gia;
             textBox4.Text = Room_DB.getTTPhong(MAPHONG).TinhTrang;

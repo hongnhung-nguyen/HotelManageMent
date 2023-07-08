@@ -36,7 +36,7 @@ namespace src.DB
         {
             OracleConnection conn = Connection.GetDBConnection();
             conn.Open();
-            string orlupdate = $"UPDATE A_PHONG SET LOAIPHONG = :loaiphong, GIA = :gia, TINHTRANG = :tinhtrang, SONGUOI = :songuoi WHERE MAPHONG = :maphong";
+            string orlupdate = $"UPDATE HOTEL_PUBLIC.A_PHONG SET LOAIPHONG = :loaiphong, GIA = :gia, TINHTRANG = :tinhtrang, SONGUOI = :songuoi WHERE MAPHONG = :maphong";
             OracleCommand cmd = new OracleCommand(orlupdate, conn);
             cmd.Parameters.Add(new OracleParameter("loaiphong", room.LoaiPhong));
             cmd.Parameters.Add(new OracleParameter("gia", room.Gia));

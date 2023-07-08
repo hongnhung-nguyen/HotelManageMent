@@ -15,7 +15,7 @@ namespace src
 
         const string host = "localhost";
         const int port = 1521;
-        const string sid = "xe";
+        const string sid = "HOTEL";
 
         Connection()
         {

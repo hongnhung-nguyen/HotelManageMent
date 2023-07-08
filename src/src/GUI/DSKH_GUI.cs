@@ -17,6 +17,7 @@ namespace src
         public DSKH()
         {
             InitializeComponent();
+            loadData();
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -29,6 +30,16 @@ namespace src
 
         }
 
+        private void loadData()
+        {
+            OracleConnection conn = Connection.GetDBConnection();
+            conn.Open();
+            string query = $"select * from hotel_public.a_khachhang ";
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridView1.DataSource = Dataprovider.Instance.ExecuteQuery(query);
+            conn.Close();
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             string tukhoa = textBox1.Text;
@@ -36,7 +47,7 @@ namespace src
             {
                 OracleConnection conn = Connection.GetDBConnection();
                 conn.Open();
-                string query = $"select * from A_KHACHHANG WHERE HOTEN LIKE ('% " + tukhoa + "')";
+                string query = $"select * from HOTEL_PUBLIC.A_KHACHHANG WHERE HOTEN LIKE ('" + tukhoa + "%')";
                 dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
                 dataGridView1.DataSource = Dataprovider.Instance.ExecuteQuery(query);
                 conn.Close();
@@ -60,7 +71,7 @@ namespace src
             {
                 OracleConnection conn = Connection.GetDBConnection();
                 conn.Open();
-                string query = $"SELECT * FROM A_KHACHHANG KH , A_PHIEUDATPHONG PDP WHERE KH.MAKH = PDP.MAKH AND PDP.NGAYKT > SYSDATE";
+                string query = $"SELECT * FROM  HOTEL_PUBLIC.A_KHACHHANG KH , A_PHIEUDATPHONG PDP WHERE KH.MAKH = PDP.MAKH AND PDP.NGAYKT > SYSDATE";
                 dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
                 dataGridView1.DataSource = Dataprovider.Instance.ExecuteQuery(query);
                 conn.Close();
@@ -69,7 +80,7 @@ namespace src
             {
                 OracleConnection conn = Connection.GetDBConnection();
                 conn.Open();
-                string query = $"SELECT * FROM A_KHACHHANG KH , A_PHIEUDATPHONG PDP WHERE KH.MAKH = PDP.MAKH AND PDP.NGAYKT < SYSDATE";
+                string query = $"SELECT * FROM  HOTEL_PUBLIC.A_KHACHHANG KH , A_PHIEUDATPHONG PDP WHERE KH.MAKH = PDP.MAKH AND PDP.NGAYKT < SYSDATE";
                 dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
                 dataGridView1.DataSource = Dataprovider.Instance.ExecuteQuery(query);
                 conn.Close();

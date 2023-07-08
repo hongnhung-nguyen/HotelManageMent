@@ -38,3 +38,6 @@ C:\Users\Admin\Desktop\Hotel Management\HotelManageMent\src\src\bin\Debug\System
 C:\Users\Admin\Desktop\Hotel Management\HotelManageMent\src\src\bin\Debug\System.ValueTuple.xml
 C:\Users\Admin\Desktop\Hotel Management\HotelManageMent\src\src\obj\Debug\src.csproj.CopyComplete
 C:\Users\Admin\Desktop\Hotel Management\HotelManageMent\src\src\obj\Debug\src.GUI.CustomerServicesGUI.resources
+C:\Users\Admin\Desktop\Hotel Management\HotelManageMent\src\src\obj\Debug\src.DSKH.resources
+C:\Users\Admin\Desktop\Hotel Management\HotelManageMent\src\src\obj\Debug\src.DSP.resources
+C:\Users\Admin\Desktop\Hotel Management\HotelManageMent\src\src\obj\Debug\src.TTPhong.resources

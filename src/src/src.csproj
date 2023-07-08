@@ -85,8 +85,10 @@
     <Compile Include="BUS\CustomerBUS.cs" />
     <Compile Include="BUS\EmployeeBUS.cs" />
     <Compile Include="BUS\HandleBUS.cs" />
+    <Compile Include="BUS\KH_BUS.cs" />
     <Compile Include="BUS\PhieuDatPhongBUS.cs" />
     <Compile Include="BUS\roomBUS.cs" />
+    <Compile Include="BUS\Room_BUS.cs" />
     <Compile Include="BUS\ServiceBUS.cs" />
     <Compile Include="BUS\userBUS.cs" />
     <Compile Include="Dataprovider.cs" />
@@ -94,8 +96,10 @@
     <Compile Include="DB\EmployeeDB.cs" />
     <Compile Include="DB\HandleDB.cs" />
     <Compile Include="Connection.cs" />
+    <Compile Include="DB\KH_DB.cs" />
     <Compile Include="DB\PhieuDatPhongDB.cs" />
     <Compile Include="DB\RoomDB.cs" />
+    <Compile Include="DB\Room_DB.cs" />
     <Compile Include="DB\ServiceDB.cs" />
     <Compile Include="formMain.cs">
       <SubType>Form</SubType>
@@ -120,6 +124,18 @@
     </Compile>
     <Compile Include="GUI\deleteEmployee.Designer.cs">
       <DependentUpon>deleteEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\DSKH_GUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\DSKH_GUI.Designer.cs">
+      <DependentUpon>DSKH_GUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\DSP_GUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\DSP_GUI.Designer.cs">
+      <DependentUpon>DSP_GUI.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\insertEmployee.cs">
       <SubType>Form</SubType>
@@ -151,6 +167,12 @@
     <Compile Include="GUI\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\TTPhong_GUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\TTPhong_GUI.Designer.cs">
+      <DependentUpon>TTPhong_GUI.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\updateEmployee.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -171,6 +193,12 @@
     <EmbeddedResource Include="GUI\deleteEmployee.resx">
       <DependentUpon>deleteEmployee.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\DSKH_GUI.resx">
+      <DependentUpon>DSKH_GUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\DSP_GUI.resx">
+      <DependentUpon>DSP_GUI.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\insertEmployee.resx">
       <DependentUpon>insertEmployee.cs</DependentUpon>
     </EmbeddedResource>
@@ -185,6 +213,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\TTPhong_GUI.resx">
+      <DependentUpon>TTPhong_GUI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\updateEmployee.resx">
       <DependentUpon>updateEmployee.cs</DependentUpon>

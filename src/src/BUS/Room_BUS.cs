@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Oracle.DataAccess.Client;
+using Oracle.ManagedDataAccess.Client;
 using src.DB;
 
 namespace src.BUS

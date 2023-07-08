@@ -87,5 +87,15 @@ namespace src
             GUI.MainBookingGUI booking = new GUI.MainBookingGUI();
             booking.Show();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            openChildForm(new DSKH());
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            openChildForm(new DSP());
+        }
     }
 }
