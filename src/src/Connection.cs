@@ -3,25 +3,24 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+//using Oracle.DataAccess.Client;
 using Oracle.ManagedDataAccess.Client;
-
-
 namespace src
 {
     class Connection
     {
 
-        public static string username = "NV041";
-        public static string password = "NV041";
+        public static string username { set; get; }
+        public static string password { set; get; }
 
         const string host = "localhost";
         const int port = 1521;
-        const string sid = "HOTEL";
+        const string sid = "xe";
 
-         Connection()
+        Connection()
         {
-            username = "NV041";
-            password = "NV041";
+            username = "";
+            password = "";
         }
 
         public static OracleConnection GetDBConnection()
@@ -43,4 +42,3 @@ namespace src
 
     }
 }
-
