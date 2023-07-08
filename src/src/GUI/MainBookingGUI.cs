@@ -19,6 +19,19 @@ namespace src.GUI
         }
         private void MainBookingGUI_Load(object sender, EventArgs e)
         {
+            string tinhtrang = comboBox_TTPhong.Text.ToString();
+            string Loai = comboBox_LoaiPhong.Text.ToString();
+            float giaMin = float.Parse(comboBox_GiaMin.Text);
+            float max = 0;
+            if (comboBox_GiaMax.Text == "")
+            {
+                max = 100000000000000000;
+            }
+            else
+                max = float.Parse(comboBox_GiaMax.Text);
+
+            dataGridView.DataSource = RoomBUS.getRoomListBUS(tinhtrang, Loai, giaMin, max);
+            dataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             //loadComboboxTinhTrangPhong();
         }
 
