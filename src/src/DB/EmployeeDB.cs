@@ -44,5 +44,16 @@ namespace src.DB
             conn.Close();
             return result >= 1 ? true : false;
         }
+
+        public static bool insertNV(string MaNV,string tennv,string phai, string ngaysinh, string sdt, string cccd, string email,string vaitro, string diachi , string matkhau )
+        {
+            OracleConnection conn = Connection.GetDBConnection();
+            conn.Open();
+            string query = $"insert into HOTEL_PUBLIC.A_NHANVIEN VALUES('{MaNV}','{tennv}', '{phai}',TO_DATE('{ngaysinh}', 'yyyymmdd'),'{sdt}','{cccd}','{email}','{ vaitro}','{diachi}')";
+            OracleCommand command = new OracleCommand(query, conn);
+            int result = Convert.ToInt32(command.ExecuteNonQuery());
+            conn.Close();
+            return result >= 1 ? true : false;
+        }
     }
 }

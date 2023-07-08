@@ -18,27 +18,27 @@ END;
     các hàm thủ tục
 */
 
-CREATE OR REPLACE A_insertEmployee(
-    MANV         VARCHAR2,
-    TENNV        VARCHAR2,
-    PHAI         VARCHAR2,
-    NGAYSINH     DATE,
-    SODT         VARCHAR2,
-    CCCD         VARCHAR2 ,  
-    EMAIL        VARCHAR2,
-    VAITRO       NVARCHAR2, 
-    DIACHI       VARCHAR2,
-    MATKHAU      VARCHAR2
+CREATE OR REPLACE PROCEDURE A_insertEmployee(
+    MANVnew   in      VARCHAR2,
+    TENNV   in     VARCHAR2,
+    PHAI     in    VARCHAR2,
+    NGAYSINH  in   DATE,
+    SODT      in   VARCHAR2,
+    CCCD     in    VARCHAR2 ,  
+    EMAIL    in    VARCHAR2,
+    VAITRO    in   NVARCHAR2, 
+    DIACHI    in   VARCHAR2,
+    MATKHAU    in  VARCHAR2
 )
-IS
-
+AS
+str VARCHAR2(3000);
 BEGIN
-    INSERT INTO A_NHANVIEN VALUES(MANV, TENNV, PHAI, NGAYSINH,SODT ,CCCD,EMAIL, VAITRO ,DIACHI );
-    CREATE USER MANV IDENTIFIED BY MATKHAU;
-    GRANT HOTEL_EMP TO MANV;
-EXCEPTION
-    WHEN OTHERS THEN
-        -- Handle the exception or log the error
-        DBMS_OUTPUT.PUT_LINE('Error inserting NHANVIEN record: ' || SQLERRM);
-        ROLLBACK;
+    str := 'ALTER SESSION SET "_ORACLE_SCRIPT"=TRUE';
+     EXECUTE IMMEDIATE  (str);
+    INSERT INTO HOTEL_PUBLIC.A_NHANVIEN VALUES(MANVnew, TENNV, PHAI, NGAYSINH,SODT ,CCCD,EMAIL, VAITRO ,DIACHI );
+    str := 'CREATE USER '||MANVnew||' IDENTIFIED BY '||MATKHAU;
+     EXECUTE IMMEDIATE  (str);
+    str:= 'GRANT HOTEL_EMP TO '|| MANVnew;
+     EXECUTE IMMEDIATE  (str);
 END;
+/

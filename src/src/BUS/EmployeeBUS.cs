@@ -25,7 +25,11 @@ namespace src.BUS
 
         public static bool checkMaNV(string manv)
         {
-            return (DB.EmployeeDB.selectMaNV(manv) > 0);
+            if (DB.EmployeeDB.selectMaNV(manv) > 0)
+            {
+                return true;
+            }    else
+                return false ;
             
         }
         public static bool delNV(string manv)
@@ -37,6 +41,10 @@ namespace src.BUS
         public static bool upNV(string manv, string diachi, string sdt, string email)
         {
             return (DB.EmployeeDB.updateNV(manv, diachi, sdt, email)); 
+        }
+        public static bool inNV(string MaNV, string tennv, string phai, string ngaysinh, string sdt, string cccd, string email, string vaitro, string diachi, string matkhau)
+        {
+            return (DB.EmployeeDB.insertNV(MaNV, tennv, phai, ngaysinh, sdt, cccd, email, vaitro, diachi, matkhau));
         }
     }
 }

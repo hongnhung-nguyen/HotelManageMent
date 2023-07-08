@@ -29,7 +29,6 @@ namespace src.GUI
         /// </summary>
         private void InitializeComponent()
         {
- 
             this.button1 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -101,6 +100,7 @@ namespace src.GUI
             this.button1.TabIndex = 26;
             this.button1.Text = "Thêm";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // dataGridView1
             // 
