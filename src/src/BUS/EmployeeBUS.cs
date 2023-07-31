@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using src.BUS;
+using src.DB;
 namespace src
 {
     class EmployeeBUS
@@ -23,7 +24,22 @@ namespace src
 
         }
 
-
+        public EmployeeBUS(string maNV,string fullName,string sex,string birthDay,string address, string phone,string email,string role, string cccd)
+        {
+            this.maNV = maNV;
+            this.fullName = fullName;
+            this.sex = sex;
+            this.birthDay = birthDay;
+            this.address = address;
+            this.phone = phone;
+            this.email = email;
+            this.role = role;
+            this.cccd = cccd;
+        }
+        public static EmployeeBUS LayTTNhanVien()
+        {
+            return EmployeeDB.LayTTNhanVien();
+        }
 
     }
 }

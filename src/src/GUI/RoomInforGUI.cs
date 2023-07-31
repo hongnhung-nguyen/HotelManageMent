@@ -44,6 +44,9 @@ namespace src.GUI
         public RoomInforGUI(DateTime NgayVao,  DateTime NgayRa, customerBUS KH)
         {
             InitializeComponent();
+
+
+
         }
 
         private void groupBox2_Enter(object sender, EventArgs e)
